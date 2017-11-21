@@ -6,7 +6,7 @@
 //  Copyright © 2017年 yvonne. All rights reserved.
 
 
-import XCTest
+import XCTest   
 @testable import calculator
 
 class calculatorTests: XCTestCase {
