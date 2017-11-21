@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calculate View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CalculateViewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wgK-O3-dXx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fah-BP-H0J">
+                                <rect key="frame" x="188.66666666666666" y="630" width="93.666666666666657" height="93.666666666666629"/>
+                                <state key="normal" title="." image="cat000-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QEg-ij-sei"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjC-gV-1dH">
+                                <rect key="frame" x="282.66666666666669" y="630" width="92.333333333333314" height="93.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                                <color key="tintColor" red="0.97769397499999999" green="0.47878718380000002" blue="0.055392153559999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="=" backgroundImage="catbtn-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ResultBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NBe-Db-hbM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhe-wl-bN6">
+                                <rect key="frame" x="0.0" y="536.33333333333337" width="93.666666666666671" height="93.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <state key="normal" title="1" image="cat1-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nu2-Pu-Ger"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lej-5D-fDa">
+                                <rect key="frame" x="188.66666666666666" y="536.33333333333337" width="93.666666666666657" height="93.666666666666629"/>
+                                <state key="normal" title="3" image="cat3-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SK8-he-HHy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTC-Ve-S9g">
+                                <rect key="frame" x="282" y="536.33333333333337" width="92.333333333333314" height="94"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="45"/>
+                                <color key="tintColor" red="0.97769397499999999" green="0.47878718380000002" blue="0.055392153559999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="+" backgroundImage="catbtn-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OrangeColorBTAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n6K-XQ-rGY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0Y-JC-xda">
+                                <rect key="frame" x="94.333333333333314" y="536.33333333333337" width="93.666666666666686" height="93.666666666666629"/>
+                                <state key="normal" title="2" image="cat2-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i6Y-jW-O3Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hf-MN-fbu">
+                                <rect key="frame" x="0.0" y="442.66666666666669" width="93.666666666666671" height="93.666666666666686"/>
+                                <state key="normal" title="4" image="cat4-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HGh-np-lW4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHq-Te-gPL">
+                                <rect key="frame" x="188.66666666666666" y="442.66666666666669" width="93.666666666666657" height="93.666666666666686"/>
+                                <state key="normal" title="6" image="cat6-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yRu-0M-567"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hb-CR-cni">
+                                <rect key="frame" x="282" y="442.66666666666669" width="92.333333333333314" height="94.000000000000057"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="45"/>
+                                <color key="tintColor" red="0.97769397499999999" green="0.47878718380000002" blue="0.055392153559999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="-" backgroundImage="catbtn-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OrangeColorBTAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JOL-5z-wyc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJZ-OU-d9U">
+                                <rect key="frame" x="94.333333333333314" y="442.66666666666669" width="93.666666666666686" height="93.666666666666686"/>
+                                <state key="normal" title="5" image="cat5-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLG-oz-PwD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqW-gb-l0n">
+                                <rect key="frame" x="0.0" y="349" width="93.666666666666671" height="93.666666666666686"/>
+                                <state key="normal" title="7" image="cat7-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uha-RN-BLE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdJ-a2-5NX">
+                                <rect key="frame" x="188.66666666666666" y="349.66666666666669" width="93.666666666666657" height="93.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="6"/>
+                                <state key="normal" title="9" image="cat9-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yht-dS-dWW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3z2-nY-N83">
+                                <rect key="frame" x="282" y="350" width="92.333333333333314" height="94"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="45"/>
+                                <color key="tintColor" red="0.97769397499999999" green="0.47878718380000002" blue="0.055392153559999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="×" backgroundImage="catbtn-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OrangeColorBTAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WEf-5q-pKx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rr-WB-Eg5">
+                                <rect key="frame" x="93.666666666666657" y="349" width="93.666666666666657" height="93.666666666666686"/>
+                                <state key="normal" title="8" image="cat8-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vx3-l8-zsY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETB-Q7-oXh">
+                                <rect key="frame" x="0.0" y="255.33333333333334" width="93.666666666666671" height="93.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="45"/>
+                                <state key="normal" title="C" backgroundImage="catbtn-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ClearBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kK7-aU-0rx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWo-rY-HxF">
+                                <rect key="frame" x="188.33333333333334" y="255.33333333333337" width="94.333333333333343" height="94"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                                <state key="normal" title="%" backgroundImage="catbtn-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="percentage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vMs-aJ-j8U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRK-Rg-gia">
+                                <rect key="frame" x="282.66666666666669" y="255.33333333333337" width="92.333333333333314" height="94"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="45"/>
+                                <color key="tintColor" red="0.97769397499999999" green="0.47878718380000002" blue="0.055392153559999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="÷" backgroundImage="catbtn-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OrangeColorBTAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hLq-TQ-2Xq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdM-yi-uDe">
+                                <rect key="frame" x="94" y="255.33333333333337" width="94.333333333333314" height="94"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                                <state key="normal" title="+/-" backgroundImage="catbtn-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="47"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="negative:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CXE-4x-aDS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="數字" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfF-Bn-7gD">
+                                <rect key="frame" x="0.0" y="125.33333333333331" width="375" height="130"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catback1-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="5KY-PQ-UpG">
+                                <rect key="frame" x="0.0" y="43.999999999999993" width="375" height="81.333333333333314"/>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHv-bG-kQg">
+                                <rect key="frame" x="93" y="630" width="93.666666666666686" height="93.666666666666629"/>
+                                <state key="normal" title="0" image="cat0-1.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rA3-OO-8CQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jHv-bG-kQg" firstAttribute="centerY" secondItem="fah-BP-H0J" secondAttribute="centerY" id="00d-ue-eEm"/>
+                            <constraint firstItem="NqW-gb-l0n" firstAttribute="top" secondItem="ETB-Q7-oXh" secondAttribute="bottom" id="05u-bv-fkR"/>
+                            <constraint firstItem="wgK-O3-dXx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-2" id="0h2-4u-Toz"/>
+                            <constraint firstItem="wgK-O3-dXx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1du-09-UtW"/>
+                            <constraint firstAttribute="bottom" secondItem="wgK-O3-dXx" secondAttribute="bottom" id="371-GV-IaC"/>
+                            <constraint firstItem="VJZ-OU-d9U" firstAttribute="height" secondItem="0hf-MN-fbu" secondAttribute="height" id="5Vq-Fa-G8J"/>
+                            <constraint firstItem="ETB-Q7-oXh" firstAttribute="height" secondItem="wgK-O3-dXx" secondAttribute="width" multiplier="0.25" id="5lC-pj-c8v"/>
+                            <constraint firstItem="ETB-Q7-oXh" firstAttribute="top" secondItem="WfF-Bn-7gD" secondAttribute="bottom" id="7wK-m7-rqK"/>
+                            <constraint firstItem="5KY-PQ-UpG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8DR-E5-0Zo"/>
+                            <constraint firstItem="Lej-5D-fDa" firstAttribute="height" secondItem="v0Y-JC-xda" secondAttribute="height" id="8Pu-bI-RbN"/>
+                            <constraint firstItem="3hb-CR-cni" firstAttribute="height" secondItem="pHq-Te-gPL" secondAttribute="height" id="AqY-RY-uTr"/>
+                            <constraint firstAttribute="trailing" secondItem="wgK-O3-dXx" secondAttribute="trailing" constant="-2" id="BBa-6N-O1k"/>
+                            <constraint firstItem="0hf-MN-fbu" firstAttribute="top" secondItem="NqW-gb-l0n" secondAttribute="bottom" id="BmA-Bh-sqS"/>
+                            <constraint firstItem="GdM-yi-uDe" firstAttribute="height" secondItem="ETB-Q7-oXh" secondAttribute="height" id="DpS-g5-iAh"/>
+                            <constraint firstItem="jHv-bG-kQg" firstAttribute="centerX" secondItem="v0Y-JC-xda" secondAttribute="centerX" id="GmH-qV-QuS"/>
+                            <constraint firstItem="SRK-Rg-gia" firstAttribute="top" secondItem="WfF-Bn-7gD" secondAttribute="bottom" id="Hif-HQ-SYD"/>
+                            <constraint firstItem="wgK-O3-dXx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IUR-Fy-Ii6"/>
+                            <constraint firstItem="GdM-yi-uDe" firstAttribute="width" secondItem="ETB-Q7-oXh" secondAttribute="width" id="Iia-DG-KDc"/>
+                            <constraint firstItem="sdJ-a2-5NX" firstAttribute="centerX" secondItem="OWo-rY-HxF" secondAttribute="centerX" id="JXG-n5-sMS"/>
+                            <constraint firstItem="qhe-wl-bN6" firstAttribute="top" secondItem="0hf-MN-fbu" secondAttribute="bottom" id="Jdr-Jb-mV3"/>
+                            <constraint firstItem="9rr-WB-Eg5" firstAttribute="centerX" secondItem="GdM-yi-uDe" secondAttribute="centerX" id="K0T-kk-bAu"/>
+                            <constraint firstItem="0hf-MN-fbu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KKo-hm-5qZ"/>
+                            <constraint firstItem="OjC-gV-1dH" firstAttribute="width" secondItem="uTC-Ve-S9g" secondAttribute="width" id="L0B-px-mzt"/>
+                            <constraint firstItem="sdJ-a2-5NX" firstAttribute="centerY" secondItem="9rr-WB-Eg5" secondAttribute="centerY" id="Lp3-qk-QIU"/>
+                            <constraint firstItem="sdJ-a2-5NX" firstAttribute="width" secondItem="ETB-Q7-oXh" secondAttribute="width" id="MIX-dx-Hkt"/>
+                            <constraint firstItem="jHv-bG-kQg" firstAttribute="height" secondItem="v0Y-JC-xda" secondAttribute="height" id="N8S-2r-jLd"/>
+                            <constraint firstItem="OjC-gV-1dH" firstAttribute="height" secondItem="fah-BP-H0J" secondAttribute="height" id="Nn7-ej-2Zv"/>
+                            <constraint firstItem="OWo-rY-HxF" firstAttribute="top" secondItem="WfF-Bn-7gD" secondAttribute="bottom" id="O5B-Xk-SaE"/>
+                            <constraint firstItem="v0Y-JC-xda" firstAttribute="width" secondItem="VJZ-OU-d9U" secondAttribute="width" id="OLQ-V9-UkM"/>
+                            <constraint firstItem="9rr-WB-Eg5" firstAttribute="centerY" secondItem="NqW-gb-l0n" secondAttribute="centerY" id="Oha-wi-qfF"/>
+                            <constraint firstItem="fah-BP-H0J" firstAttribute="centerX" secondItem="Lej-5D-fDa" secondAttribute="centerX" id="PP8-3K-uRK"/>
+                            <constraint firstItem="0hf-MN-fbu" firstAttribute="width" secondItem="NqW-gb-l0n" secondAttribute="width" id="RgS-pG-nlu"/>
+                            <constraint firstItem="3hb-CR-cni" firstAttribute="centerY" secondItem="pHq-Te-gPL" secondAttribute="centerY" id="SY8-bF-dhc"/>
+                            <constraint firstItem="fah-BP-H0J" firstAttribute="width" secondItem="jHv-bG-kQg" secondAttribute="width" id="SiM-SW-7VY"/>
+                            <constraint firstItem="uTC-Ve-S9g" firstAttribute="centerY" secondItem="Lej-5D-fDa" secondAttribute="centerY" id="TNd-qb-In9"/>
+                            <constraint firstItem="pHq-Te-gPL" firstAttribute="centerX" secondItem="sdJ-a2-5NX" secondAttribute="centerX" id="TNj-6U-G8z"/>
+                            <constraint firstItem="5KY-PQ-UpG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UIi-dq-lxb"/>
+                            <constraint firstItem="uTC-Ve-S9g" firstAttribute="height" secondItem="Lej-5D-fDa" secondAttribute="height" id="Umg-wa-Nut"/>
+                            <constraint firstItem="SRK-Rg-gia" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VlI-7I-8YA"/>
+                            <constraint firstItem="v0Y-JC-xda" firstAttribute="centerX" secondItem="VJZ-OU-d9U" secondAttribute="centerX" id="W2z-gC-UeE"/>
+                            <constraint firstItem="OWo-rY-HxF" firstAttribute="width" secondItem="GdM-yi-uDe" secondAttribute="width" id="WC3-Zs-AHG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WfF-Bn-7gD" secondAttribute="trailing" id="WNH-BW-FId"/>
+                            <constraint firstItem="WfF-Bn-7gD" firstAttribute="top" secondItem="5KY-PQ-UpG" secondAttribute="bottom" id="Wrh-DM-Tya"/>
+                            <constraint firstItem="WfF-Bn-7gD" firstAttribute="height" secondItem="wgK-O3-dXx" secondAttribute="height" multiplier="0.16" id="XiG-e0-nq0"/>
+                            <constraint firstItem="NqW-gb-l0n" firstAttribute="centerX" secondItem="ETB-Q7-oXh" secondAttribute="centerX" id="Y58-p3-E3T"/>
+                            <constraint firstItem="Lej-5D-fDa" firstAttribute="centerY" secondItem="v0Y-JC-xda" secondAttribute="centerY" id="YYS-hL-JJe"/>
+                            <constraint firstItem="ETB-Q7-oXh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YfV-dw-m6h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5KY-PQ-UpG" secondAttribute="trailing" id="YsX-dC-4we"/>
+                            <constraint firstItem="9rr-WB-Eg5" firstAttribute="height" secondItem="ETB-Q7-oXh" secondAttribute="height" id="Z3n-om-EZR"/>
+                            <constraint firstAttribute="trailing" secondItem="wgK-O3-dXx" secondAttribute="trailing" id="anL-1r-t25"/>
+                            <constraint firstItem="VJZ-OU-d9U" firstAttribute="centerY" secondItem="0hf-MN-fbu" secondAttribute="centerY" id="bSV-E8-DJd"/>
+                            <constraint firstItem="pHq-Te-gPL" firstAttribute="centerY" secondItem="VJZ-OU-d9U" secondAttribute="centerY" id="cKP-rZ-5cH"/>
+                            <constraint firstItem="NqW-gb-l0n" firstAttribute="width" secondItem="ETB-Q7-oXh" secondAttribute="width" id="ch4-e7-I6e"/>
+                            <constraint firstItem="NqW-gb-l0n" firstAttribute="height" secondItem="ETB-Q7-oXh" secondAttribute="height" id="cy2-Eo-2Ni"/>
+                            <constraint firstItem="qhe-wl-bN6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dMS-tT-fz3"/>
+                            <constraint firstItem="SRK-Rg-gia" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="drx-Fn-NH3"/>
+                            <constraint firstItem="VJZ-OU-d9U" firstAttribute="centerX" secondItem="9rr-WB-Eg5" secondAttribute="centerX" id="efM-bi-DD8"/>
+                            <constraint firstItem="uTC-Ve-S9g" firstAttribute="width" secondItem="3hb-CR-cni" secondAttribute="width" id="emA-35-x3v"/>
+                            <constraint firstItem="GdM-yi-uDe" firstAttribute="leading" secondItem="ETB-Q7-oXh" secondAttribute="trailing" id="eyR-NN-70b"/>
+                            <constraint firstItem="pHq-Te-gPL" firstAttribute="width" secondItem="VJZ-OU-d9U" secondAttribute="width" id="f65-13-k7c"/>
+                            <constraint firstItem="jHv-bG-kQg" firstAttribute="width" secondItem="v0Y-JC-xda" secondAttribute="width" id="fG1-YH-i2j"/>
+                            <constraint firstItem="3z2-nY-N83" firstAttribute="width" secondItem="SRK-Rg-gia" secondAttribute="width" id="fLR-lZ-zZc"/>
+                            <constraint firstItem="WfF-Bn-7gD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fW3-lS-t1F"/>
+                            <constraint firstItem="qhe-wl-bN6" firstAttribute="width" secondItem="0hf-MN-fbu" secondAttribute="width" id="gSL-8a-5Oy"/>
+                            <constraint firstItem="SRK-Rg-gia" firstAttribute="leading" secondItem="OWo-rY-HxF" secondAttribute="trailing" id="go3-dB-ast"/>
+                            <constraint firstItem="fah-BP-H0J" firstAttribute="height" secondItem="jHv-bG-kQg" secondAttribute="height" id="hmR-Qv-QA5"/>
+                            <constraint firstItem="v0Y-JC-xda" firstAttribute="centerY" secondItem="qhe-wl-bN6" secondAttribute="centerY" id="iUl-Hu-Ebh"/>
+                            <constraint firstItem="v0Y-JC-xda" firstAttribute="height" secondItem="qhe-wl-bN6" secondAttribute="height" id="k6V-l3-QWn"/>
+                            <constraint firstItem="9rr-WB-Eg5" firstAttribute="width" secondItem="ETB-Q7-oXh" secondAttribute="width" id="k9d-5r-Bab"/>
+                            <constraint firstItem="Lej-5D-fDa" firstAttribute="width" secondItem="pHq-Te-gPL" secondAttribute="width" id="l9J-al-ixL"/>
+                            <constraint firstItem="uTC-Ve-S9g" firstAttribute="centerX" secondItem="3hb-CR-cni" secondAttribute="centerX" id="n5L-kJ-lgZ"/>
+                            <constraint firstItem="sdJ-a2-5NX" firstAttribute="height" secondItem="ETB-Q7-oXh" secondAttribute="height" id="nKx-em-r7i"/>
+                            <constraint firstItem="3hb-CR-cni" firstAttribute="width" secondItem="3z2-nY-N83" secondAttribute="width" id="neQ-b7-MTi"/>
+                            <constraint firstItem="OWo-rY-HxF" firstAttribute="leading" secondItem="GdM-yi-uDe" secondAttribute="trailing" id="pHI-ff-Zig"/>
+                            <constraint firstItem="qhe-wl-bN6" firstAttribute="height" secondItem="0hf-MN-fbu" secondAttribute="height" id="rh6-Fx-4jD"/>
+                            <constraint firstItem="ETB-Q7-oXh" firstAttribute="width" secondItem="wgK-O3-dXx" secondAttribute="width" multiplier="0.25" id="sNN-j0-Fsh"/>
+                            <constraint firstItem="GdM-yi-uDe" firstAttribute="centerY" secondItem="ETB-Q7-oXh" secondAttribute="centerY" id="sWC-5a-Da2"/>
+                            <constraint firstItem="0hf-MN-fbu" firstAttribute="height" secondItem="NqW-gb-l0n" secondAttribute="height" id="sb2-qx-MrX"/>
+                            <constraint firstItem="0hf-MN-fbu" firstAttribute="centerX" secondItem="NqW-gb-l0n" secondAttribute="centerX" id="ua6-Zj-iPW"/>
+                            <constraint firstItem="jHv-bG-kQg" firstAttribute="top" secondItem="qhe-wl-bN6" secondAttribute="bottom" id="v5a-GR-U02"/>
+                            <constraint firstItem="3z2-nY-N83" firstAttribute="height" secondItem="SRK-Rg-gia" secondAttribute="height" id="vc6-JZ-iyA"/>
+                            <constraint firstItem="3z2-nY-N83" firstAttribute="centerX" secondItem="SRK-Rg-gia" secondAttribute="centerX" id="vun-VX-j0a"/>
+                            <constraint firstItem="OjC-gV-1dH" firstAttribute="centerX" secondItem="uTC-Ve-S9g" secondAttribute="centerX" id="vv2-1q-IFw"/>
+                            <constraint firstItem="Lej-5D-fDa" firstAttribute="centerX" secondItem="pHq-Te-gPL" secondAttribute="centerX" id="wVQ-er-bdM"/>
+                            <constraint firstItem="3z2-nY-N83" firstAttribute="centerY" secondItem="sdJ-a2-5NX" secondAttribute="centerY" id="xAi-TQ-dnG"/>
+                            <constraint firstItem="SRK-Rg-gia" firstAttribute="height" secondItem="OWo-rY-HxF" secondAttribute="height" id="xHD-Fs-gy8"/>
+                            <constraint firstItem="OWo-rY-HxF" firstAttribute="height" secondItem="GdM-yi-uDe" secondAttribute="height" id="xPC-Bt-NEg"/>
+                            <constraint firstItem="OjC-gV-1dH" firstAttribute="centerY" secondItem="fah-BP-H0J" secondAttribute="centerY" id="y3r-nm-xEo"/>
+                            <constraint firstItem="5KY-PQ-UpG" firstAttribute="height" secondItem="wgK-O3-dXx" secondAttribute="height" multiplier="0.1" id="yGU-a8-RV5"/>
+                            <constraint firstItem="VJZ-OU-d9U" firstAttribute="width" secondItem="0hf-MN-fbu" secondAttribute="width" id="yhU-ic-u8W"/>
+                            <constraint firstItem="3hb-CR-cni" firstAttribute="centerX" secondItem="3z2-nY-N83" secondAttribute="centerX" id="zdW-Qz-FX0"/>
+                            <constraint firstItem="pHq-Te-gPL" firstAttribute="height" secondItem="VJZ-OU-d9U" secondAttribute="height" id="zmx-mb-k1G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="NumberLabel" destination="WfF-Bn-7gD" id="lUn-IW-VvZ"/>
+                        <outlet property="ResultBToutlet" destination="OjC-gV-1dH" id="Ywf-Pl-zE5"/>
+                        <outlet property="addBToutlet" destination="uTC-Ve-S9g" id="KtV-aa-dod"/>
+                        <outlet property="exceptBToutlet" destination="SRK-Rg-gia" id="Vtk-Rk-Pfr"/>
+                        <outlet property="lessBToutlet" destination="3hb-CR-cni" id="CaF-cu-6eY"/>
+                        <outlet property="multiplyBToutlet" destination="3z2-nY-N83" id="rJy-3H-Jyg"/>
+                        <outletCollection property="numberBT" destination="jHv-bG-kQg" collectionClass="NSMutableArray" id="TTI-eP-zcV"/>
+                        <outletCollection property="numberBT" destination="Lej-5D-fDa" collectionClass="NSMutableArray" id="I2U-Rl-6We"/>
+                        <outletCollection property="numberBT" destination="v0Y-JC-xda" collectionClass="NSMutableArray" id="JTn-Sh-pd4"/>
+                        <outletCollection property="numberBT" destination="qhe-wl-bN6" collectionClass="NSMutableArray" id="yJj-ab-2xF"/>
+                        <outletCollection property="numberBT" destination="pHq-Te-gPL" collectionClass="NSMutableArray" id="qMj-ok-OZ0"/>
+                        <outletCollection property="numberBT" destination="VJZ-OU-d9U" collectionClass="NSMutableArray" id="siv-Ra-ndo"/>
+                        <outletCollection property="numberBT" destination="0hf-MN-fbu" collectionClass="NSMutableArray" id="B7R-1l-Go2"/>
+                        <outletCollection property="numberBT" destination="NqW-gb-l0n" collectionClass="NSMutableArray" id="kxC-Pt-VwW"/>
+                        <outletCollection property="numberBT" destination="9rr-WB-Eg5" collectionClass="NSMutableArray" id="nO3-MC-pbF"/>
+                        <outletCollection property="numberBT" destination="sdJ-a2-5NX" collectionClass="NSMutableArray" id="wXs-7m-S5P"/>
+                        <outletCollection property="numberBT" destination="fah-BP-H0J" collectionClass="NSMutableArray" id="pEV-72-2kQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat0-1.png" width="95" height="101"/>
+        <image name="cat000-1.png" width="95" height="101"/>
+        <image name="cat1-1.png" width="95" height="101"/>
+        <image name="cat2-1.png" width="95" height="102"/>
+        <image name="cat3-1.png" width="95" height="101"/>
+        <image name="cat4-1.png" width="95" height="101"/>
+        <image name="cat5-1.png" width="95" height="101"/>
+        <image name="cat6-1.png" width="95" height="101"/>
+        <image name="cat7-1.png" width="95" height="101"/>
+        <image name="cat8-1.png" width="95" height="101"/>
+        <image name="cat9-1.png" width="95" height="101"/>
+        <image name="catback1-2.png" width="393" height="80"/>
+        <image name="catbtn-1.png" width="95" height="101"/>
+    </resources>
+</document>
